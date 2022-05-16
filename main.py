@@ -12,7 +12,10 @@ Amazon also distributes a variety of downloadable and streaming content through 
 Amazon has been criticized for practices including technological surveillance overreach, a hyper-competitive and demanding work culture, tax avoidance, and anti-competitive behavior.
 '''
 
-text1 = '''I gave the Hunger Gamrs 5 stars because I simply could not put it down! The characters are riveting and the book is set in a dystopian world called Panem which hosts the annual Hunger Games, a tournament where two tributes from each of the twelve districts fight to death until only one victor remains. If you like hard science fiction the you'll love this book!'''
+text1 = '''I gave the Hunger Gamrs 5 stars because I simply could not put it down! The characters are riveting and the
+ book is set in a dystopian world called Panem which hosts the annual Hunger Games, a tournament where two tributes from 
+ each of the twelve districts fight to death until only one victor remains. If you like hard science fiction the you'll 
+ love this book!'''
 
 def summarise_text(text):
     classifier = pipeline("summarization")
@@ -41,5 +44,5 @@ event = "PersonX takes PersonY home"
 get_intent(event)
 
 if __name__ == "__main__":
-    summarise_text(text=text)
+    summarise_text(text=text1)
     # sentiment_analysis_text("I am angry at you")
